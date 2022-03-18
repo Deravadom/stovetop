@@ -1,0 +1,45 @@
+{
+  "name": "stovetop",
+  "version": "1.0.0",
+  "description": "A TypeScript transaction manager that seamlessly reconciles resource management and transaction history.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "echo 'no formatter found!'",
+    "lint": "echo 'no linter found!'",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deravadom/stovetop.git"
+  },
+  "contributors": [
+    {
+      "name": "Michael Needleman",
+      "email": "michael.needleman01@gmail.com",
+      "url": "https://github.com/Deravadom"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deravadom/stovetop/issues"
+  },
+  "homepage": "https://github.com/Deravadom/stovetop#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/ramda": "^0.28.1",
+    "jest": "^27.5.1",
+    "ramda": "^0.28.0",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
