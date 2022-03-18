@@ -1,6 +1,6 @@
 {
   "name": "stovetop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript transaction manager that seamlessly reconciles resource management and transaction history.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
